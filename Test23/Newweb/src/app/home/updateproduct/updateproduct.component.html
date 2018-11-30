@@ -1,0 +1,61 @@
+<app-content>
+  <form [formGroup]="form"(submit)="onSubmit()">
+    <div class="row">
+   
+      <label for="">รหัสบัตรประชาชน</label>
+      <input type="text" class="form-control"  formControlName="PERSION_NUMBER">
+     
+    </div>
+    <div class="form-group row">
+      <label class="col-md-2 col-form-label">คำนำหน้าชื่อ</label>
+      <div class="col-md-1">
+        <select class="form-control" formControlName="INITIAL_CODE">
+          <option selected="selected" value="ชาย">นาย</option>
+          <option selected="selected" value="หญิง">นาง</option>
+          <option selected="selected" value="หญิง">นางสาว</option>
+          <option selected="selected" value="ชาย">เด็กชาย</option>
+          <option selected="selected" value="ชาย">เด็กหญิง</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+   
+      <label for="">ชื่อ</label>
+      <input type="text" class="form-control" formControlName="NAME">
+    </div>
+    
+    <div class="row">
+   
+        <label for="">นามสกุล</label>
+        <input type="text" class="form-control" formControlName="LASTNAME_CODE">
+      </div>
+     
+        
+            <div class="form-group row">
+                <label class="col-md-2 col-form-label">เพศ</label>
+                <div class="col-md-1">
+                  <select class="form-control" formControlName="GENDER">
+                    <option selected="selected" value="ชาย">ชาย</option>
+                    <option selected="selected" value="หญิง">หญิง</option>
+               
+                  </select>
+                </div>
+              </div>
+                
+         
+          <div class="row">
+   
+              <label for="">อายุ</label>
+              <input type="text" class="form-control"  formControlName="AGE">
+             
+            </div>
+           
+         
+
+        <div class="pull-right">
+
+            <button type="submit" class="btn btn-primary">เพิ่มข้อมูล</button>
+          
+        </div>
+  </form>
+</app-content>
